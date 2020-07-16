@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/feedbackItem"
+        android:title="FEEDBACK"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logOutItem"
+        android:title="LOG OUT"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logInItem"
+        android:title="LOG IN"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/cartButton"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_store"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/wishListMainButton"
+        android:icon="@drawable/ic_favorite"
+        android:title="wishList Button"
+        app:showAsAction="ifRoom" />
+
+</menu>

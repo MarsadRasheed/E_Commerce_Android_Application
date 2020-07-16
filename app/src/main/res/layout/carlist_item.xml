@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cartcard"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="16dp">
+
+            <ImageView
+                android:id="@+id/cartListImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_image"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/cartListNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@id/cartcard"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeTextType="uniform"
+            android:maxLines="2"
+            android:text="iPhone 6 plus charging strip, handfree jack, mic, antena"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/cartlistRegularTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cartcard"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@id/cartcard"
+            android:text="Rs. 2000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/cartlistSaleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cartcard"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@id/cartlistRegularTextView"
+            android:text="Rs. 2000"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"></TextView>
+
+        <ImageButton
+            android:id="@+id/cartListRemoveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cartlistRegularTextView"
+            android:layout_below="@id/cartListNameText"
+            android:layout_toEndOf="@+id/cartcard"
+            android:layout_toRightOf="@+id/cartcard"
+            android:background="?android:selectableItemBackground"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_remove"></ImageButton>
+
+        <TextView
+            android:id="@+id/cartListQuantityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cartListNameText"
+            android:layout_toEndOf="@+id/cartListRemoveButton"
+            android:layout_toRightOf="@+id/cartListRemoveButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/cartlistAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cartlistRegularTextView"
+            android:layout_below="@id/cartListNameText"
+            android:layout_toEndOf="@+id/cartListQuantityText"
+            android:layout_toRightOf="@+id/cartListQuantityText"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/ic_add"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/cartListDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cartListNameText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/ic_delete"></ImageButton>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

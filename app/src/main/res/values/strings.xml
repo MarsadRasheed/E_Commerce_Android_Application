@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mr Fixer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mr Fixer</string>
+    <string name="nav_header_subtitle">repair@mrfixer.pk</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Order Repair</string>
+    <string name="menu_slideshow">Terms &amp; Conditions</string>
+    <string name="home_second">Home Second</string>
+    <string name="menu_share">Share app</string>
+    <string name="menu_star">Rate app</string>
+    <string name="menu_contact">Contact us</string>
+    <string name="menu_about">About us</string>
+
+    <string name="link"><a href="http://mrfixer.pk/">http://mrfixer.pk/</a></string>
+
+    <string name="facebook_app_id">269211737723699</string>
+    <string name="fb_login_protocol_scheme">fb269211737723699</string>
+
+
+</resources>

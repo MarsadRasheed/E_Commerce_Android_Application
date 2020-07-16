@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/orderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Lets repair your Gadget!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/orderEditNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Name"></EditText>
+
+
+        <EditText
+            android:id="@+id/orderEditContactText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderEditNameText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Contact no"></EditText>
+
+        <EditText
+            android:id="@+id/orderEditCnicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderEditContactText"
+            android:layout_margin="16dp"
+            android:hint="Enter your CNIC (optional)"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deviceTypeText"
+            android:layout_below="@+id/orderEditCnicText"
+            android:layout_margin="16dp"
+            android:text="your device type : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/orderEditDTText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderEditCnicText"
+            android:layout_toRightOf="@+id/deviceTypeText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Device Type"></Spinner>
+
+        <EditText
+            android:id="@+id/orderEditDNText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderEditDTText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Device Name"></EditText>
+
+
+        <EditText
+            android:id="@+id/orderEditDMText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderEditDNText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Device Model"></EditText>
+
+        <EditText
+            android:id="@+id/orderEditDPText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/orderEditDMText"
+            android:layout_margin="16dp"
+            android:gravity="bottom"
+            android:hint="Enter Device Problem"></EditText>
+
+
+        <EditText
+            android:id="@+id/orderEditAddressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderEditDPText"
+            android:layout_margin="16dp"
+            android:hint="Enter your address"></EditText>
+
+        <Button
+            android:id="@+id/orderSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderEditAddressText"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorYellowish"
+            android:background="@color/colorBluish"
+            android:text="Send"></Button>
+
+    </RelativeLayout>
+</ScrollView>

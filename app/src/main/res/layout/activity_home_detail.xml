@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeDetailActivity">
+
+    <ImageView
+        android:id="@+id/hdImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="24dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/hdNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdImageView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/hdRegularPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdNameText"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/hdSalePriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdNameText"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toEndOf="@+id/hdRegularPriceText"
+        android:layout_toRightOf="@+id/hdRegularPriceText"
+        android:textStyle="bold"></TextView>
+
+    <View
+        android:id="@+id/hdPriceDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@+id/hdRegularPriceText"/>
+
+
+    <TextView
+        android:id="@+id/hdQuantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdPriceDivider"
+        android:layout_margin="16dp"
+        android:text="Quantity : "
+        ></TextView>
+
+    <Spinner
+        android:id="@+id/hdQuantitySpinner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdPriceDivider"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"></Spinner>
+
+    <TextView
+        android:id="@+id/hdDeliveryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdQuantityText"
+        android:text="Delivery Time : "
+        android:layout_marginLeft="16dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/hdDaysText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 to 4 days"
+        android:layout_below="@id/hdQuantityText"
+        android:layout_centerInParent="true"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/hdAvailabilityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdDeliveryText"
+        android:text="Availability : "
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/hdStockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Stock"
+        android:layout_below="@id/hdDaysText"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        ></TextView>
+
+    <View
+        android:id="@+id/hdButtonUpDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@+id/hdAvailabilityText"
+        android:layout_marginTop="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_below="@id/hdButtonUpDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/hdCartButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add to Cart"
+            android:backgroundTint="@color/colorAccent"
+            ></Button>
+
+        <TextView
+            android:id="@+id/hdCallText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Call to Order"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawableTint="#000000"
+            android:padding="10dp"
+            android:gravity="center_horizontal"></TextView>
+
+        <ImageButton
+            android:id="@+id/hdWishLstButton"
+            android:src="@drawable/ic_favorite_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:layout_margin="10dp"
+            ></ImageButton>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/hdButtonDownDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@+id/buttonLayout"
+        />
+
+</RelativeLayout>

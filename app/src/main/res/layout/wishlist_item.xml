@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/wishcard"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="16dp"
+            android:layout_margin="8dp">
+            <ImageView
+                android:id="@+id/wishListImageView"
+                android:layout_width="match_parent"
+                android:src="@drawable/ic_image"
+                android:layout_height="match_parent">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/wishListNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wishcard"
+            android:maxLines="2"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:layout_margin="16dp"
+            android:text="iPhone 6 plus charging strip, handfree jack, mic, antena"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/wishlistRegularTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wishcard"
+            android:layout_margin="8dp"
+            android:layout_alignBottom="@id/wishcard"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:text="Rs. 2000"
+            android:textColor="@color/colorGreen"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/wishlistSaleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wishlistRegularTextView"
+            android:layout_margin="8dp"
+            android:layout_alignBottom="@id/wishcard"
+            android:textStyle="bold"
+            android:text="Rs. 2000"
+            android:textColor="@color/colorRed"
+            ></TextView>
+
+        <ImageButton
+            android:id="@+id/wishlistDelete"
+            android:src="@drawable/ic_delete"
+            android:layout_width="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/wishListNameText"
+            android:layout_margin="8dp"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/wishListAddToCartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wishListNameText"
+            android:layout_toLeftOf="@id/wishlistDelete"
+            android:src="@drawable/ic_add_shopping_cart"
+            android:background="?android:selectableItemBackground"
+            android:layout_margin="8dp"
+            ></ImageButton>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

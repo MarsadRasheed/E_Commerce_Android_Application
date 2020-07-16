@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/repairerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Lets repair your Gadget!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/repairerEditNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repairerText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Name"></EditText>
+
+
+        <EditText
+            android:id="@+id/repairerEditContactText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repairerEditNameText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Contact no"></EditText>
+
+        <EditText
+            android:id="@+id/repairerEditCnicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repairerEditContactText"
+            android:layout_margin="16dp"
+            android:hint="Enter your CNIC (optional)"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deviceTypeText"
+            android:layout_below="@+id/repairerEditCnicText"
+            android:layout_margin="16dp"
+            android:text="your device type : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/repairerEditDTText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repairerEditCnicText"
+            android:layout_toRightOf="@id/deviceTypeText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Device Type"></Spinner>
+
+        <EditText
+            android:id="@+id/repairerEditDNText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repairerEditDTText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Device Name"></EditText>
+
+
+        <EditText
+            android:id="@+id/repairerEditDMText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repairerEditDNText"
+            android:layout_margin="16dp"
+            android:hint="Enter your Device Model"></EditText>
+
+        <EditText
+            android:id="@+id/repairerEditDPText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/repairerEditDMText"
+            android:layout_margin="16dp"
+            android:gravity="bottom"
+            android:hint="Enter Device Problem"></EditText>
+
+
+        <EditText
+            android:id="@+id/repairerEditAddressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repairerEditDPText"
+            android:layout_margin="16dp"
+            android:hint="Enter your address"></EditText>
+
+            <Button
+                android:id="@+id/repairerSendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repairerEditAddressText"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:textColor="@color/colorYellowish"
+                android:backgroundTint="@color/colorBluish"
+                android:background="@drawable/round_button"
+                android:text="Send"></Button>
+
+    </RelativeLayout>
+</ScrollView>

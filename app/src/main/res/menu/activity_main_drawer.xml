@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_bug"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_description"
+            android:title="@string/menu_slideshow" />
+
+    </group>
+
+    <item android:title="Communicate" android:checkable="true" >
+        <menu>
+            <item android:checkable="true"
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact"
+                android:title= "@string/menu_contact" />
+
+            <item android:checkable="true"
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_group"
+                android:title="@string/menu_about"
+                ></item>
+
+            <item android:checkable="true"
+                android:id="@+id/nav_shareApp"
+                android:icon="@drawable/ic_share"
+                android:title= "@string/menu_share" />
+
+            <item android:checkable="true"
+                android:id="@+id/nav_rateApp"
+                android:icon="@drawable/ic_star"
+                android:title="@string/menu_star"
+                ></item>
+        </menu>
+
+    </item>
+</menu>

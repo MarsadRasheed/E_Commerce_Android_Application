@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkout">
+
+    <TextView
+        android:id="@+id/checkoutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Shipping Address"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:gravity="center"
+        android:layout_margin="18dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/cNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkoutText"
+        android:hint="Your Full Name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/cEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Your Email"
+        android:layout_below="@id/cNameEditText"
+    ></EditText>
+
+
+    <EditText
+        android:id="@+id/cPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Your Phone"
+        android:layout_below="@id/cEmailEditText"
+        ></EditText>
+
+
+    <EditText
+        android:id="@+id/cAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Your Address"
+        android:gravity="bottom"
+        android:layout_below="@id/cPhoneEditText"
+        ></EditText>
+
+    <View
+        android:id="@+id/cAddressDivider"
+        android:layout_below="@+id/cAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/cProductsPriceText"
+        android:layout_below="@id/cAddressDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Products Price : "
+        ></TextView>
+
+    <TextView
+        android:id="@+id/cProductsPrice"
+        android:layout_below="@id/cAddressDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/cProductsPriceText"
+        android:text=" 2000"
+        android:textStyle="bold"
+        android:textColor="@color/colorGreen"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/cShippingPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cProductsPriceText"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Shipping Charges : "></TextView>
+
+    <TextView
+        android:id="@+id/cShippingPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cProductsPriceText"
+        android:layout_toRightOf="@id/cShippingPriceText"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBluish"
+        android:text="2000"></TextView>
+
+    <View
+        android:id="@+id/cPriceDivider"
+        android:layout_below="@+id/cShippingPriceText"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/cTotalPrice"
+        android:layout_below="@id/cPriceDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="4000"
+        android:layout_toRightOf="@id/cTotalPriceText"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/cTotalPriceText"
+        android:layout_below="@id/cPriceDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Total Amount : "
+        ></TextView>
+
+    <Button
+        android:id="@+id/cProceedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/colorBluish"
+        android:layout_margin="8dp"
+        android:text="Proceed"
+        android:textColor="@color/colorYellowish"
+        android:layout_alignParentBottom="true"></Button>
+
+
+</RelativeLayout>

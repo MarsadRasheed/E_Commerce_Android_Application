@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.hamlet.MrFixer.FeedbackActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/feedackCard"
+        app:cardCornerRadius="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/colorBluish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/feedbackName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_button"
+                android:padding="8dp"
+                android:hint="Your Name"></EditText>
+
+            <EditText
+                android:id="@+id/feedbackEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/feedbackName"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:background="@drawable/round_button"
+                android:hint="Your Email"></EditText>
+
+            <EditText
+                android:id="@+id/feedbackSubject"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/feedbackEmail"
+                android:layout_margin="24dp"
+                android:background="@drawable/round_button"
+                android:padding="8dp"
+                android:hint="Your Subject"></EditText>
+
+            <EditText
+                android:id="@+id/feedbackFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/feedbackSubject"
+                android:background="@drawable/round_button"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+                android:hint="Your FeedBack"
+                android:padding="8dp"></EditText>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/feedbackSendButton"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedackCard"
+        android:layout_margin="24dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorBluish"
+        android:text="SEND FEEDBACK"></Button>
+
+</RelativeLayout>

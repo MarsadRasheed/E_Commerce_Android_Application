@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="24dp"
+            android:id="@+id/aboutCard"
+            android:backgroundTint="@color/colorBluish"
+            >
+
+            <ImageView
+                android:id="@+id/abImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aboutus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/abTextDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutCard"
+            android:layout_margin="16dp"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintTop_toBottomOf="@+id/aboutCard"
+             />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSkills"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="24dp"
+            android:layout_below="@id/abTextDetail"
+            app:cardBackgroundColor="@color/colorBluish"
+            >
+            <TextView
+                android:padding="8dp"
+                android:shadowRadius="16"
+                android:id="@+id/abSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="SKILLS"
+                android:textColor="@color/colorYellowish"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"></TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/abMobileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardSkills"
+            android:layout_margin="8dp"
+            android:text="Mobile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/aboutMobilePercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardSkills"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:text="90%"></TextView>
+
+        <ProgressBar
+            android:id="@+id/abMobilePB"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abMobileText"
+            android:layout_margin="8dp"></ProgressBar>
+
+
+        <TextView
+            android:id="@+id/abLaptopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abMobilePB"
+            android:layout_margin="8dp"
+            android:text="Laptop"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/aboutLaptopPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abMobilePB"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:text="90%"></TextView>
+
+        <ProgressBar
+            android:id="@+id/abLaptopPB"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abLaptopText"
+            android:layout_margin="8dp"></ProgressBar>
+
+
+        <TextView
+            android:id="@+id/abTabletText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abLaptopPB"
+            android:layout_margin="8dp"
+            android:text="Tablet/iPad"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/aboutTabletPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abLaptopPB"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:text="90%"></TextView>
+
+        <ProgressBar
+            android:id="@+id/abTabletPB"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abTabletText"
+            android:layout_margin="8dp"></ProgressBar>
+
+
+        <TextView
+            android:id="@+id/abOtherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abTabletPB"
+            android:layout_margin="8dp"
+            android:text="Other"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/aboutOtherPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abTabletPB"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:text="90%"></TextView>
+
+        <ProgressBar
+            android:id="@+id/abOtherPB"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abOtherText"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="20dp"></ProgressBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/abOtherPB"
+            android:background="@color/colorBluish">
+
+            <TextView
+                android:id="@+id/abMapText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Here we're ! "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorYellowish"
+                android:textStyle="bold"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/abCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/abMapText">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="24dp">
+
+                    <fragment
+                        android:id="@+id/aboutMapView"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_below="@id/abMapText"></fragment>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/abLocationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abCardLayout"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawableTint="#ddc24f"
+                android:textColor="@color/colorWhite"></TextView>
+
+            <TextView
+                android:id="@+id/abPhoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abLocationText"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawableTint="@color/colorYellowish"
+                android:textColor="@color/colorWhite"></TextView>
+
+            <TextView
+                android:id="@+id/abEmailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abPhoneText"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawableTint="@color/colorYellowish"
+                android:textColor="@color/colorWhite"></TextView>
+
+            <TextView
+                android:id="@+id/abTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abEmailText"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="30dp"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawableTint="@color/colorYellowish"
+                android:textColor="@color/colorWhite"></TextView>
+
+            <TextView
+                android:layout_below="@+id/abTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|-| / \\ M |_ E T"
+                android:layout_margin="8dp"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                ></TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
